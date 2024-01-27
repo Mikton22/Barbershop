@@ -141,15 +141,149 @@
                                 </label>
                             </li>
                         </ul>
-
                     </fieldset>
 
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Группы товаров</legend>
+                        <ul class="catalog-filter-list">
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input type="radio" class="visually-hidden control-input"
+                                           name="product-group" value="shaving-supplies">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Бритвенные принадлежности</span>
+                                </label>
+                            </li>
+
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input type="radio" class="visually-hidden control-input"
+                                           name="product-group" value="care-products" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Средства для ухода</span>
+                                </label>
+                            </li>
+
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input type="radio" class="visually-hidden control-input"
+                                           name="product-group" value="accessories">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Аксессуары</span>
+                                </label>
+                            </li>
+                        </ul>
                     </fieldset>
 
                     <button class="button" type="submit">Показать</button>
                 </form>
+
+                <form class="sorting-type">
+                    <label for="sorting" class="visually-hidden">Сортировка</label>
+                    <select name="sorting" id="sorting" class="select-control">
+                        <option value="popular">Сначала популярные</option>
+                        <option value="cheap">Сначала дешёвое</option>
+                        <option value="expensive">Сначала дорогое</option>
+                    </select>
+                    <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+                </form>
+                <a href="#" class="button button-light">
+                    <span class="visually-hidden">Показать список</span>
+                </a>
+                <a href="#" class="button">
+                    <span class="visually-hidden">Показать карточки</span>
+                </a>
+
+                <ul class="product-list">
+                    <li class="product-card">
+                        <a href="product.html" class="product-card-link">
+                            <img src="" alt="" class="product-card-image">
+                            <h3 class="product-class-title">Шампунь для мужчин Brews Daily</h3>
+                        </a>
+                        <b class="product-card-price">744 ₽</b>
+                        <a href="#" class="product-card-button button">Купить</a>
+                    </li>
+
+                    <li class="product-card">
+                        <a href="product.html" class="product-card-link">
+                            <img src="" alt="" class="product-card-image">
+                            <h3 class="product-class-title">Syoss шампунь Men Power & Strength</h3>
+                        </a>
+                        <b class="product-card-price">160 ₽</b>
+                        <a href="#" class="product-card-button button">Купить</a>
+                    </li>
+
+                    <li class="product-card">
+                        <a href="product.html" class="product-card-link">
+                            <img src="" alt="" class="product-card-image">
+                            <h3 class="product-class-title">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
+                        </a>
+                        <b class="product-card-price">94 ₽</b>
+                        <a href="#" class="product-card-button button">Купить</a>
+                    </li>
+
+                    <li class="product-card">
+                        <a href="product.html" class="product-card-link">
+                            <img src="" alt="" class="product-card-image">
+                            <h3 class="product-class-title">Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»</h3>
+                        </a>
+                        <b class="product-card-price">173 ₽</b>
+                        <a href="#" class="product-card-button button">Купить</a>
+                    </li>
+
+                    <li class="product-card">
+                        <a href="product.html" class="product-card-link">
+                            <img src="" alt="" class="product-card-image">
+                            <h3 class="product-class-title">Шампунь Amplifier Thickening</h3>
+                        </a>
+                        <b class="product-card-price">441 ₽</b>
+                        <a href="#" class="product-card-button button">Купить</a>
+                    </li>
+
+                    <li class="product-card">
+                        <a href="product.html" class="product-card-link">
+                            <img src="" alt="" class="product-card-image">
+                            <h3 class="product-class-title">American Crew шампунь Anti-Dandruff</h3>
+                        </a>
+                        <b class="product-card-price">904 ₽</b>
+                        <a href="#" class="product-card-button button">Купить</a>
+                    </li>
+                </ul>
+
+                <ul class="pagination">
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-prev pagination-disabled">
+                            <span class="visually-hidden">Предыдущая страница</span>
+                        </a>
+                    </li>
+
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-current">1</a>
+                    </li>
+
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-current" href="#">2</a>
+                    </li>
+
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-current" href="#">3</a>
+                    </li>
+
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-current" href="#">4</a>
+                    </li>
+
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-current" href="#">5</a>
+                    </li>
+
+                    <li class="pagination-item">
+                        <a href="#" class="pagination-link pagination-next">
+                            <span class="visually-hidden">Следующая страница</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="button pagination-show-more" type="button">Показать ещё</button>
             </section>
         </main>
 
