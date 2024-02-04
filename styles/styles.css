@@ -38,12 +38,31 @@
     font-display: swap;
 }
 
+html{
+    height: 100%;
+}
+
 body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #242424;
     background-color: #FBF7F4;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .button{
@@ -64,6 +83,8 @@ body{
 }
 
 .navigation-link{
+    display: block;
+    padding: 24px 19px;
     font-family: "PT Sans Narrow", sans-serif;
     line-height: 22px;
     color: #FFFFFF;
@@ -74,6 +95,48 @@ body{
     text-transform: uppercase;
 }
 
+.navigation{
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.navigation-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 470px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navigation-user .navigation-link {
+    min-width: 16px;
+    min-height: 22px;
+}
+
+.navigation-user{
+    max-width: 250px;
+    margin-left: auto;
+}
+
+.page-container{
+    margin: 0 auto;
+    width: 940px;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+.main-container{
+    flex-grow: 1;
+    padding-top: 64px;
+    padding-bottom: 60px;
+}
+
 .main-index{
     color: #FFFFFF;
     background-color: #000000;
@@ -82,27 +145,62 @@ body{
     background-repeat: no-repeat;
 }
 
+.advantages{
+    margin-bottom: 58px;
+}
+
 .advantages-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    list-style-type: none;
+    color: #FFF;
 }
 
 .advantages-title{
+    margin-top: 0;
+    margin-bottom: 56px;
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 32px;
     line-height: 35px;
     text-transform: uppercase;
 }
 
+.advantages-description{
+    margin: 0;
+}
+
+.advantages-item{
+    width: 277px;
+}
+
 .index-columns{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding: 40px;
     color: #242424;
     background-color: #FBF7F4;
 }
 
+.index-columns:last-child{
+    margin-bottom: 0;
+}
+
 .services{
+    width: 390px;
     text-transform: uppercase;
 }
 
+.gallery{
+    width: 390px;
+}
+
 .services-title{
+    margin-top: 0;
+    margin-bottom: 28px;
     font-size: 32px;
     line-height: 35px;
     font-weight: 700;
@@ -126,7 +224,60 @@ body{
 }
 
 .contacts{
+    width: 350px;
     font-weight: 700;
+}
+
+.page-footer-container{
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.footer-contacts{
+    width: 200px;
+    margin-right: 130px;
+}
+
+.footer-socials{
+    margin-left: auto;
+    max-width: 190px;
+}
+
+.footer-social-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-socials-item{
+    width: 56px;
+    height: 44px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.footer-socials-item:nth-child(3n){
+    margin-right: 0;
+}
+
+.navigation-logo{
+    width: 140px;
+    margin-right: 100px;
+}
+
+.catalog-products{
+    display: flex;
+}
+
+.catalog-right-column{
+    width: 700px;
+}
+
+.catalog-filter{
+    width: 220px;
+    margin-right: 20px;
 }
 
 .gallery-title{
@@ -178,6 +329,7 @@ body{
     font-weight: 700;
     color: #FFF;
     background-color: #242424;
+    margin: 0;
 }
 
 .page-footer a {
@@ -190,12 +342,14 @@ body{
 }
 
 .page-footer-title{
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 14px;
     font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .footer-contacts-address{
@@ -232,7 +386,7 @@ body{
 .main-inner{
     color: #242424;
     background-color: #FBF7F4;
-    background-image: url("../images/bg-noisy.png");
+    /*background-image: url("../images/bg-noisy.png");*/
 }
 
 .inner-header-title{
