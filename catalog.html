@@ -48,6 +48,7 @@
 <main class="main-inner main-container">
     <div class="page-container">
 
+        <!-- Шапка -->
         <header class="inner-header">
             <h1 class="inner-header-title">Каталог</h1>
             <ul class="breadcrumbs">
@@ -61,9 +62,9 @@
         </header>
 
         <section class="catalog-products">
-
+            <!--временно добавим атрибут hidden, чтобы заголовок не рушил сетку-->
             <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
-
+            <!-- Фильтрация -->
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Цена:</legend>
@@ -162,7 +163,7 @@
             </form>
 
             <div class="catalog-right-column">
-
+                <!-- Сортировка -->
                 <div class="sorting-container">
                     <form class="sorting-type">
                         <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -182,58 +183,71 @@
                     </a>
                 </div>
 
-
+                <!-- Список товаров -->
                 <ul class="product-list">
                     <li class="product-card">
-                        <a class="product-card-link" href="product.html">
-                            <img class="product-card-image" src="images/1.jpg" width="220" height="168" alt="">
+                        <a class="product-card-image-link" href="product.html">
+                            <img class="product-card-image" src="images/catalog/1.jpg" width="220" height="200" alt="">
+                        </a>
+                        <a class="product-card-title-link" href="">
                             <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
                         </a>
                         <span class="product-card-price">744 ₽</span>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="button product-card-button" href="#">Купить</a>
                     </li>
                     <li class="product-card">
-                        <a class="product-card-link" href="#">
-                            <img class="product-card-image" src="images/2.jpg" width="220" height="168" alt="">
-                            <h3 class="product-card-title">Syoss шампунь Men Power &amp; Strength</h3>
+                        <a class="product-card-image-link" href="product.html">
+                            <img class="product-card-image" src="images/catalog/2.jpg" width="220" height="200" alt="">
+                        </a>
+                        <a class="product-card-title-link" href="">
+                            <h3 class="product-card-title">Syoss шампунь Men Power & Strength</h3>
                         </a>
                         <span class="product-card-price">160 ₽</span>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="button product-card-button" href="#">Купить</a>
                     </li>
                     <li class="product-card">
-                        <a class="product-card-link" href="#">
-                            <img class="product-card-image" src="images/3.jpg" width="220" height="168" alt="">
+                        <a class="product-card-image-link" href="product.html">
+                            <img class="product-card-image" src="images/catalog/3.jpg" width="220" height="200" alt="">
+                        </a>
+                        <a class="product-card-title-link" href="">
                             <h3 class="product-card-title">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
                         </a>
                         <span class="product-card-price">94 ₽</span>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="button product-card-button" href="#">Купить</a>
                     </li>
                     <li class="product-card">
-                        <a class="product-card-link" href="#">
-                            <img class="product-card-image" src="images/4.jpg" width="220" height="168" alt="">
+                        <a class="product-card-image-link" href="product.html">
+                            <img class="product-card-image" src="images/catalog/4.jpg" width="220" height="200" alt="">
+                        </a>
+                        <a class="product-card-title-link" href="">
                             <h3 class="product-card-title">Nivea Men шампунь-уход «Экстремальная свежесть с ментолом»</h3>
                         </a>
                         <span class="product-card-price">173 ₽</span>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="button product-card-button" href="#">Купить</a>
                     </li>
                     <li class="product-card">
-                        <a class="product-card-link" href="#">
-                            <img class="product-card-image" src="images/5.jpg" width="220" height="168" alt="">
+                        <a class="product-card-image-link" href="product.html">
+                            <img class="product-card-image" src="images/catalog/5.jpg" width="220" height="200" alt="">
+                        </a>
+                        <a class="product-card-title-link" href="">
                             <h3 class="product-card-title">Шампунь Amplifier Thickening</h3>
                         </a>
                         <span class="product-card-price">441 ₽</span>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="button product-card-button" href="#">Купить</a>
                     </li>
                     <li class="product-card">
-                        <a class="product-card-link" href="#">
-                            <img class="product-card-image" src="images/6.jpg" width="220" height="168" alt="">
+                        <a class="product-card-image-link" href="product.html">
+                            <img class="product-card-image" src="images/catalog/6.jpg" width="220" height="200" alt="">
+                        </a>
+                        <a class="product-card-title-link" href="">
                             <h3 class="product-card-title">American Crew шампунь Anti-Dandruff</h3>
                         </a>
                         <span class="product-card-price">904 ₽</span>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="button product-card-button" href="#">Купить</a>
                     </li>
                 </ul>
 
+                <!-- Пагинация -->
                 <div class="pagination-container">
                     <ul class="pagination">
                         <li class="pagination-item">
