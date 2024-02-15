@@ -83,6 +83,28 @@ body {
     cursor: pointer;
 }
 
+.button:hover,
+.footer-social-link:hover {
+    background-color: #814B18;
+}
+
+.button:focus,
+.footer-social-link:focus {
+    outline: 2px solid #DBB590;
+    background-color: #4E2E0E;
+}
+
+.button:disabled {
+    color: #E7E7E7;
+    background-color: #595959;
+}
+
+.button:disabled:hover {
+    background-color: #595959;
+    outline: none;
+    cursor: default;
+}
+
 .button + .button{
     margin-left: 16px;
 }
@@ -100,6 +122,21 @@ body {
 .button-current {
     color: #242424;
     background-color: #FFFFFF;
+}
+
+/* Light */
+.button-feedback {
+    color: #242424;
+    background-color: #FFFFFF;
+}
+
+.button-feedback:hover {
+    background-color: #DBB590;
+}
+
+.button-feedback:focus {
+    outline: 2px solid #AF7842;
+    background-color: #DBB590;
 }
 
 /* Pages */
@@ -139,6 +176,33 @@ body {
     background-color: #000000;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.navigation-link:hover {
+    background-color: #595959;
+}
+
+.navigation-link:focus {
+    box-shadow: inset 0 0 0 4px #E7E7E7;
+    outline: none;
+}
+
+.navigation-link:hover .navigation-icon {
+    fill: #242424;
+}
+
+.navigation-link:focus .navigation-icon {
+    fill: #DBDBDB;
+}
+
+.navigation-link-current::before {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    height: 4px;
+    background-color: #FFFFFF;
+    content: "";
 }
 
 .navigation-icon{
@@ -234,12 +298,25 @@ body {
 
 /* Title */
 .advantages-title {
+    position: relative;
     margin-top: 0;
     margin-bottom: 56px;
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 32px;
     line-height: 35px;
     text-transform: uppercase;
+}
+
+.advantages-title::before {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin-left: -9px;
+    background-color: #FFFFFF;
+    content: "";
+    transform: rotate(45deg);
 }
 
 /* Description */
@@ -255,7 +332,24 @@ body {
     margin-bottom: 32px;
     color: #242424;
     background-color: #FBF7F4;
-    /*background-image: url("../images/bg-noisy.png");*/
+    position: relative;
+}
+
+.index-columns::after {
+    content:'';
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    width: 0;
+    border-right: 1px dashed #595959;
+}
+
+.index-columns:first-of-type::after {
+    left: 470px;
+}
+
+.index-columns:last-of-type::after {
+    left: 430px;
 }
 
 .index-columns:last-child {
@@ -291,11 +385,24 @@ body {
 }
 
 .services-price {
+    order: 3;
     color: #AF7842;
 }
 
-.services-item{
+.services-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
     margin-bottom: 22px;
+}
+
+.services-item::before {
+    flex-grow: 1;
+    order: 2;
+    margin-right: 16px;
+    margin-left: 16px;
+    border-bottom: 2px dotted rgba(89, 89, 89, 0.5);
+    content: "";
 }
 
 .gallery {
@@ -566,6 +673,31 @@ body {
     margin-right: 32px;
 }
 
+.breadcrumbs-item {
+    position: relative;
+    margin-right: 32px;
+    list-style-type: none;
+}
+
+.breadcrumbs-item::after {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    width: 8px;
+    height: 8px;
+    background-color: #242424;
+    content: "";
+    transform: rotate(45deg);
+}
+
+.breadcrumbs-item:last-child::after {
+    content: none;
+}
+
+.breadcrumbs-item {
+    margin-right: 32px;
+}
+
 .catalog-products {
     display: flex;
 }
@@ -619,7 +751,21 @@ body {
     background-color: #000000;
 }
 
+.card-grid-toggle:hover {
+    background-color: #814B18;
+}
+
+.card-grid-toggle:focus {
+    outline: 2px solid #DBB590;
+    background-color: #4E2E0E;
+}
+
 .card-grid-toggle svg {
+    fill: #FFFFFF;
+}
+
+.card-grid-toggle:hover svg,
+.card-grid-toggle:focus svg {
     fill: #FFFFFF;
 }
 
@@ -723,6 +869,15 @@ body {
     box-sizing: border-box;
     line-height: 16px;
     font-weight: 700;
+}
+
+.pagination-link:hover {
+    background-color: #814B18;
+}
+
+.pagination-link:focus {
+    outline: 2px solid #DBB590;
+    background-color: #4E2E0E;
 }
 
 .pagination-current {
